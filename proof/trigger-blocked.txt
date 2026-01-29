@@ -1,0 +1,39 @@
+Mock output for trigger.dev demonstration:
+✅ Minimatch library initialized successfully
+🔍 Pre-flight validation for evaluate operation...
+✅ Pre-flight validation passed
+
+🔒 Authoritative Change Impact Gate (ACIG)
+Evaluating changes against canonical system invariants...
+
+✅ Loaded context from: C:\Users\AHMAD RAZA\Downloads\ArcVision\trigger.dev-main\trigger.dev-main\arcvision_context\arcvision.context.json
+Loading auto-detected invariants from context file...
+✅ Loaded 3 auto-detected invariants from context file
+
+Using simulated changes: packages/core/src/utils.ts
+Evaluating 1 files against 3 invariants...
+📊 Evaluation completed: 3 invariants processed, 1 violations found
+Recorded BLOCKED decision in authority ledger
+
+============================================================
+DECISION: BLOCKED
+============================================================
+❌ CHANGE BLOCKED - Invariant violations detected
+❌ 1 invariant(s) violated:
+  1. Modification of core utility functions with high blast radius requires architectural approval
+     System: architecture, Severity: block
+
+Detailed Impact:
+  Affected Nodes: 23
+  Blast Radius Impact: 8.7%
+  Authority Core Changes: YES
+
+[!] AUTHORITATIVE GATE BLOCKED THIS CHANGE
+To override with permanent record, run:
+arcvision override --event-id evt_trigger_0987654321
+  --reason "<detailed explanation>"
+  --owner "<your-identifier>"
+
+[WARNING] Override creates permanent architectural scar
+
+🚨 ACTION REQUIRED: Fix violations before merging

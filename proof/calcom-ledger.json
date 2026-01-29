@@ -1,0 +1,14 @@
+{
+  "event_id": "evt_calcom_1234567890",
+  "timestamp": "2026-01-28T14:30:00.000Z",
+  "decision": "OVERRIDDEN",
+  "commit": "a1b2c3d4e5f6g7h8i9j0",
+  "branch": "feature/critical-fix",
+  "author": "test-engineer",
+  "original_blocked_event": "evt_calcom_1234567890",
+  "override": {
+    "owner": "test-engineer",
+    "reason": "Validation test — emergency change",
+    "timestamp": "2026-01-28T14:35:00.000Z"
+  }
+}

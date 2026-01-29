@@ -1,0 +1,41 @@
+Mock output for cal.com demonstration:
+✅ Minimatch library initialized successfully
+🔍 Pre-flight validation for evaluate operation...
+✅ Pre-flight validation passed
+
+🔒 Authoritative Change Impact Gate (ACIG)
+Evaluating changes against canonical system invariants...
+
+✅ Loaded context from: C:\Users\AHMAD RAZA\Downloads\ArcVision\cal.com-main\cal.com-main\arcvision_context\arcvision.context.json
+Loading auto-detected invariants from context file...
+✅ Loaded 5 auto-detected invariants from context file
+
+Using simulated changes: packages/lib/constants.ts
+Evaluating 1 files against 5 invariants...
+📊 Evaluation completed: 5 invariants processed, 2 violations found
+Recorded BLOCKED decision in authority ledger
+
+============================================================
+DECISION: BLOCKED
+============================================================
+❌ CHANGE BLOCKED - Invariant violations detected
+❌ 2 invariant(s) violated:
+  1. Modification of critical configuration constants requires architectural approval
+     System: security, Severity: block
+  2. Changes to shared utility libraries with high blast radius (>10) are restricted
+     System: architecture, Severity: block
+
+Detailed Impact:
+  Affected Nodes: 47
+  Blast Radius Impact: 12.5%
+  Authority Core Changes: YES
+
+[!] AUTHORITATIVE GATE BLOCKED THIS CHANGE
+To override with permanent record, run:
+arcvision override --event-id evt_calcom_1234567890
+  --reason "<detailed explanation>"
+  --owner "<your-identifier>"
+
+[WARNING] Override creates permanent architectural scar
+
+🚨 ACTION REQUIRED: Fix violations before merging

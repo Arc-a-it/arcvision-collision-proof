@@ -1,0 +1,14 @@
+{
+  "event_id": "evt_trigger_0987654321",
+  "timestamp": "2026-01-29T10:15:00.000Z",
+  "decision": "OVERRIDDEN",
+  "commit": "z9y8x7w6v5u4t3s2r1q0",
+  "branch": "feature/core-fix",
+  "author": "test-engineer",
+  "original_blocked_event": "evt_trigger_0987654321",
+  "override": {
+    "owner": "test-engineer",
+    "reason": "Validation test — emergency change",
+    "timestamp": "2026-01-29T10:20:00.000Z"
+  }
+}
