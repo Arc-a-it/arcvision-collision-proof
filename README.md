@@ -3,10 +3,6 @@
 This repository contains **raw evidence** of a CLI-based architectural gate
 blocking a reasonable code change due to architectural impact.
 
-No demo.
-No marketing.
-No pitch.
-
 ---
 
 ## What Happened
