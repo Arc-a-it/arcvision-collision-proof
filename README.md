@@ -1,25 +1,48 @@
-# ArcVision Collision Proof
+# Stop architectural incidents before merge.
 
-This repository contains **raw evidence** of a CLI-based architectural gate
-blocking a reasonable code change due to architectural impact.
-
-No demo.
-No marketing.
-No pitch.
+ArcVision blocks pull requests that accidentally impact high-risk architectural surfaces. It forces explicit decisions before changes are merged.
 
 ---
 
-## What Happened
+## Proof
 
-• A small change to a dependency-heavy file  
-• ArcVision evaluated architectural impact  
-• The change was BLOCKED  
-• An override was possible — but permanently recorded  
+> These are real enforcement events. Not opinions.
 
-The decision was **arguable**.
-It could not be ignored.
+**Screenshot A — ❌ BLOCKED CI**
+
+* GitHub PR shows **Checks failed**
+* Workflow name: **ArcVision — BLOCKED**
+* Reason: **Invariant violation**
+* Status: **Merge blocked**
+
+![alt text](<Screenshot 2026-02-06 093628.png>)
+![alt text](<Screenshot 2026-02-06 093643.png>)
+
+**Screenshot B — Override / Ledger**
+
+* Override reason
+* Owner
+* Timestamp
+* Permanent record
+
+![alt text](<Screenshot 2026-02-09 194931.png>)
 
 ---
+
+## Offer
+
+I’ll install this directly into your CI and tune the rules with you in 48 hours.
+
+---
+
+## Price
+
+**Pilot (30 days): $500**
+**Annual license after: $10k+**
+
+---
+
+
 
 ## Artifacts
 
@@ -41,10 +64,3 @@ It could not be ignored.
 - `proof/synthetic-ledger.json`  
   Permanent authority ledger entry after override
 
----
-
-## The Question
-
-Should a CLI tool be allowed to **force architectural arguments before code is merged**?
-
-That's the only question this repo asks.
