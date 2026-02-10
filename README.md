@@ -15,8 +15,8 @@ ArcVision blocks pull requests that accidentally impact high-risk architectural 
 * Reason: **Invariant violation**
 * Status: **Merge blocked**
 
-![alt text](<proof/stocks/Screenshot 2026-02-06 093643.png>)
 ![alt text](<proof/stocks/Screenshot 2026-02-06 093628.png>)
+![alt text](<proof/stocks/Screenshot 2026-02-06 093643.png>)
 
 
 **Screenshot B — Override / Ledger**
